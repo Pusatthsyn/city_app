@@ -149,6 +149,8 @@ class ExerciseButton extends StatelessWidget {
   }
 }
 
+
+// Slider phoos
 class HomePage extends StatelessWidget {
   final List<SliderBox> _sliderBoxes = [
     SliderBox(
