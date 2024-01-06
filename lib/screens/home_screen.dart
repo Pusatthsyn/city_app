@@ -149,7 +149,6 @@ class ExerciseButton extends StatelessWidget {
   }
 }
 
-
 // Slider phoos
 class HomePage extends StatelessWidget {
   final List<SliderBox> _sliderBoxes = [
@@ -386,6 +385,7 @@ class HomePage extends StatelessWidget {
   }
   
 
+// Sayfa içerisinde verilen linke erisim saglama
   // Function to open a link
   Future<void> _launchLink(String link) async {
     if (await canLaunch(link)) {
