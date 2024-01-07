@@ -2,7 +2,6 @@ import 'package:city_app/more_menu/contact_social_page.dart';
 import 'package:city_app/more_menu/food_page.dart';
 import 'package:city_app/more_menu/image_gallery_page.dart';
 import 'package:city_app/more_menu/municipality_page.dart';
-import 'package:city_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -58,14 +57,6 @@ class DrawerContent extends StatelessWidget {
               fontStyle: FontStyle.italic,
             ),
           ),
-        ),
-        _buildListItem(
-          context,
-          Icons.home,
-          'Ana Sayfaya Dön',
-          HomePage(),
-          Colors.purple.shade300,
-          null,
         ),
         _buildListItem(
           context,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
-  final String _welcome = "MADALYALI ŞEHRE HOŞGELDİNİZ";
+  final String _welcome = "MADALYALI ŞEHİR";
   final String _buttonText = 'HADİ BAŞLA';
 
   @override
@@ -74,8 +74,8 @@ class ProjectStyle {
       fontStyle: FontStyle.italic,
       letterSpacing: 8,
       color: Colors.white,
-      fontSize: 36,
-      fontWeight: FontWeight.bold);
+      fontSize: 46,
+      fontWeight: FontWeight.w900);
 }
 
 class ButtonHeights {
