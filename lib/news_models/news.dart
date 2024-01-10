@@ -1,4 +1,4 @@
-import 'package:city_app/models/articles.dart';
+import 'package:city_app/news_models/articles.dart';
 
 class News {
   String? status;

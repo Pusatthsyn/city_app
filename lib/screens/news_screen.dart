@@ -1,5 +1,5 @@
 
-import 'package:city_app/models/category.dart';
+import 'package:city_app/news_models/category.dart';
 import 'package:city_app/more_menu/drawer_content.dart';
 import 'package:city_app/viewmodel/article_list_view_model.dart';
 import 'package:flutter/material.dart';

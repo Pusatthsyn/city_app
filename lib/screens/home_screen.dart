@@ -5,8 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 class SliderBox {
   final String title;
   final String description;
-  final String imagePath; // Image path property
-  final String link; // New property for the link
+  final String imagePath;
+  final String link;
 
   SliderBox({
     required this.title,
@@ -34,7 +34,7 @@ class ExerciseButton extends StatelessWidget {
   final VoidCallback onPressed;
   final ExerciseButtonConfig config;
   final VoidCallback onTap;
-  final bool isSliderButton; // Whether the button is inside a slider
+  final bool isSliderButton;
 
   const ExerciseButton({
     Key? key,
@@ -82,8 +82,6 @@ class ExerciseButton extends StatelessWidget {
       height: 150,
       child: GestureDetector(
         onTap: () {
-          // Perform the click action here
-          // For example: Navigator.pushNamed(context, '/destinationPage');
           onPressed();
         },
         child: ElevatedButton(
@@ -149,32 +147,31 @@ class ExerciseButton extends StatelessWidget {
   }
 }
 
-// Slider phoos
 class HomePage extends StatelessWidget {
   final List<SliderBox> _sliderBoxes = [
     SliderBox(
       title: '',
       description: 'Description 1',
       imagePath: 'assets/images/img003.png',
-      link: 'https://expo2023.org/', // Replace with your link
+      link: 'https://expo2023.org/',
     ),
     SliderBox(
       title: '',
       description: 'Description 2',
       imagePath: 'assets/images/img004.png',
-      link: 'https://www.kahramankart.com.tr/', // Replace with your link
+      link: 'https://www.kahramankart.com.tr/',
     ),
     SliderBox(
       title: '',
       description: 'Description 3',
       imagePath: 'assets/images/img005.png',
-      link: 'https://kahramanmaras.bel.tr/haber/2022/11/17/buyuksehir-kutuphanelerinde-ucretsiz-internet', // Replace with your link
+      link: 'https://kahramanmaras.bel.tr/haber/2022/11/17/buyuksehir-kutuphanelerinde-ucretsiz-internet',
     ),
     SliderBox(
       title: '',
       description: 'Description 4',
       imagePath: 'assets/images/img006.png',
-      link: 'https://kahramanmaras.afad.gov.tr/', // Replace with your link
+      link: 'https://kahramanmaras.afad.gov.tr/',
     ),
     // Add more SliderBoxes as needed
   ];
@@ -249,8 +246,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ExerciseButton(
-                    text: 'Kahramanmaraş',
-                    imagePath: 'assets/images/img1.png',
+                    text: 'E-Belediye',
+                    imagePath: 'assets/images/111.png',
                     onPressed: () {
                       // Button 1 pressed
                     },
@@ -258,12 +255,16 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(width: 16),
                   ExerciseButton(
-                    text: 'Kahramanmaraş',
-                    imagePath: 'assets/images/img1.png',
+                    text: 'Nöbetçi Eczaneler',
+                    imagePath: 'assets/images/112.png',
                     onPressed: () {
                       // Button 1 pressed
                     },
-                    config: buttonConfig, onTap: () {  },
+                    onTap: () {
+                      // Open the link when the button is tapped
+                      _launchLink('https://kahramanmaras.bel.tr/nobetci-eczaneler');
+                    },
+                    config: buttonConfig,
                   ),
                 ],
               ),
@@ -271,30 +272,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ExerciseButton(
-                    text: 'Tarihi Kokular',
-                    imagePath: 'assets/images/img2.png',
-                    onPressed: () {
-                      // Button 3 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                  const SizedBox(width: 16),
-                  ExerciseButton(
-                    text: 'Tarihi Kokular',
-                    imagePath: 'assets/images/img2.png',
-                    onPressed: () {
-                      // Button 3 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ExerciseButton(
-                    text: 'Dondurmaya Doyamayacaksınız',
-                    imagePath: 'assets/images/img3.png',
+                    text: 'Projeler',
+                    imagePath: 'assets/images/113.png',
                     onPressed: () {
                       // Button 5 pressed
                     },
@@ -302,8 +281,8 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(width: 16),
                   ExerciseButton(
-                    text: 'Dondurmaya Doyamayacaksınız',
-                    imagePath: 'assets/images/img3.png',
+                    text: 'Hizmetler',
+                    imagePath: 'assets/images/114.png',
                     onPressed: () {
                       // Button 5 pressed
                     },
@@ -315,17 +294,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ExerciseButton(
-                    text: 'Kurtuluş',
-                    imagePath: 'assets/images/img4.png',
-                    onPressed: () {
-                      // Button 5 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                  const SizedBox(width: 16),
-                  ExerciseButton(
-                    text: 'Kurtuluş',
-                    imagePath: 'assets/images/img4.png',
+                    text: 'Otopark',
+                    imagePath: 'assets/images/115.png',
                     onPressed: () {
                       // Button 5 pressed
                     },
@@ -333,60 +303,14 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ExerciseButton(
-                    text: 'Kültürel Miraslar',
-                    imagePath: 'assets/images/img5.png',
-                    onPressed: () {
-                      // Button 5 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                  const SizedBox(width: 16),
-                  ExerciseButton(
-                    text: 'Kültürel Miraslar',
-                    imagePath: 'assets/images/img5.png',
-                    onPressed: () {
-                      // Button 5 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ExerciseButton(
-                    text: 'Tatil & Eğlence',
-                    imagePath: 'assets/images/img6.png',
-                    onPressed: () {
-                      // Button 5 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                  const SizedBox(width: 16),
-                  ExerciseButton(
-                    text: 'Tatil & Eğlence',
-                    imagePath: 'assets/images/img6.png',
-                    onPressed: () {
-                      // Button 5 pressed
-                    },
-                    config: buttonConfig, onTap: () {  },
-                  ),
-                ],
-              ),
+              const SizedBox(height: 30,)
             ],
           ),
         ),
       ),
     );
   }
-  
 
-// Sayfa içerisinde verilen linke erisim saglama
-  // Function to open a link
   Future<void> _launchLink(String link) async {
     if (await canLaunch(link)) {
       await launch(link);

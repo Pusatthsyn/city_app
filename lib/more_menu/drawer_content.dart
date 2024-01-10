@@ -1,5 +1,5 @@
+import 'package:city_app/food_screens/foods.dart';
 import 'package:city_app/more_menu/contact_social_page.dart';
-import 'package:city_app/more_menu/food_page.dart';
 import 'package:city_app/more_menu/image_gallery_page.dart';
 import 'package:city_app/more_menu/municipality_page.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +70,7 @@ class DrawerContent extends StatelessWidget {
           context,
           Icons.local_dining_rounded,
           'Yöresel Lezzetler',
-          const FoodPage(),
+          const Yemekler(),
           Colors.red.shade300,
           null,
         ),

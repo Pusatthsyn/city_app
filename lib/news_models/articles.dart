@@ -1,4 +1,4 @@
-import 'package:city_app/models/source.dart';
+import 'package:city_app/news_models/source.dart';
 
 class Articles {
   Source? source;
