@@ -251,7 +251,11 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       // Button 1 pressed
                     },
-                    config: buttonConfig, onTap: () {  },
+                    onTap: () {
+                      // Open the specified link when the button is tapped
+                      _launchLink('https://kahramanmaras.bel.tr/hizmetler/e-belediye');
+                    },
+                    config: buttonConfig,
                   ),
                   const SizedBox(width: 16),
                   ExerciseButton(
@@ -277,7 +281,10 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       // Button 5 pressed
                     },
-                    config: buttonConfig, onTap: () {  },
+                    config: buttonConfig,
+                    onTap: () {
+                      // Add functionality if needed
+                    },
                   ),
                   const SizedBox(width: 16),
                   ExerciseButton(
@@ -286,7 +293,10 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       // Button 5 pressed
                     },
-                    config: buttonConfig, onTap: () {  },
+                    config: buttonConfig,
+                    onTap: () {
+                      // Add functionality if needed
+                    },
                   ),
                 ],
               ),
@@ -299,7 +309,10 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       // Button 5 pressed
                     },
-                    config: buttonConfig, onTap: () {  },
+                    config: buttonConfig,
+                    onTap: () {
+                      // Add functionality if needed
+                    },
                   ),
                 ],
               ),
@@ -319,3 +332,4 @@ class HomePage extends StatelessWidget {
     }
   }
 }
+

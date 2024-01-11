@@ -175,7 +175,7 @@ class _ImageGalleryPageState extends State<ImageGalleryPage> {
         ),
         backgroundColor: Colors.grey,
       ),
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Center(
           child: Column(

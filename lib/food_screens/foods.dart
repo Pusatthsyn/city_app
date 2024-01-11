@@ -23,7 +23,7 @@ class _YemeklerState extends State<Yemekler> {
           ),
         ),
         backgroundColor: Colors.red.shade300,),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(

@@ -8,7 +8,7 @@ class MunicipalityPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       appBar: AppBar(
           backgroundColor: Colors.blue.shade300,
           title: const Text(
